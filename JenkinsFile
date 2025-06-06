@@ -1,4 +1,3 @@
-#testrun
 pipeline {
   agent any
 
