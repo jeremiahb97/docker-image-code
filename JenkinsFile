@@ -42,7 +42,6 @@ pipeline {
             --image=us-central1-docker.pkg.dev/$PROJECT_ID/$IMAGE:latest \
             --platform=managed \
             --region=$REGION \
-            --allow-unauthenticated
         '''
       }
     }
