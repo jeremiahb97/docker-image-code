@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "It works!"
+    return "✅ Hello from Cloud Run!"
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8081)) # ✅ dynamic and Cloud Run–friendly
-    app.run(host="0.0.0.0", port=port)
+    port = int(os.environ.get("PORT", 8080))   # ✅ Cloud Run provides this
+    app.run(host="0.0.0.0", port=port)         # ✅ Must bind to 0.0.0.0
